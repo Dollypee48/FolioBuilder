@@ -57,7 +57,7 @@ export default function CvForm() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-10 bg-white dark:bg-zinc-900 rounded-xl shadow-md mt-10">
+    <div className="max-w-4xl mx-auto px-6 py-10 bg-white dark:bg-zinc-900 rounded-xl shadow-md mt-10 mb-10">
       <h1 className="text-3xl font-bold text-zinc-800 dark:text-white mb-6">Create Your CV</h1>
 
       <form onSubmit={handleSubmit} className="space-y-8">

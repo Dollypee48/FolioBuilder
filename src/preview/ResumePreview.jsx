@@ -21,29 +21,29 @@ export default function ResumePreview() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      {/* Header + Download */}
+    
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold text-gray-800">Resume Preview</h1>
         <DownloadButton onClick={handleDownload} label="Download PDF" />
       </div>
 
-      {/* Resume Content */}
+      
       <div
         ref={resumeRef}
         className="p-6 rounded-xl shadow-md space-y-6"
         style={{
           backgroundColor: "#ffffff",
-          color: "#1f2937", // gray-800
+          color: "#1f2937", 
           fontFamily: "sans-serif",
         }}
       >
-        {/* Personal Info */}
+  
         <div>
           <h2 style={{ fontSize: "1.25rem", fontWeight: "600" }}>{resumeData.fullName}</h2>
           <p style={{ fontSize: "0.875rem" }}>{resumeData.email} | {resumeData.phone}</p>
         </div>
 
-        {/* Summary */}
+       
         {resumeData.summary && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Summary</h3>
@@ -51,7 +51,7 @@ export default function ResumePreview() {
           </div>
         )}
 
-        {/* Skills */}
+       
         {resumeData.skills?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Skills</h3>
@@ -72,7 +72,7 @@ export default function ResumePreview() {
           </div>
         )}
 
-        {/* Experience */}
+       
         {resumeData.experience?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Work Experience</h3>
@@ -86,7 +86,7 @@ export default function ResumePreview() {
           </div>
         )}
 
-        {/* Education */}
+       
         {resumeData.education?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Education</h3>

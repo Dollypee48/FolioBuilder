@@ -1,13 +1,1 @@
-@type {import('tailwindcss').Config} 
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      // No custom oklch colors here
-    },
-  },
-  darkMode: "class", // or "media"
-}
+@import "tailwindcss";
