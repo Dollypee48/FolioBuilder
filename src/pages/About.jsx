@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12 bg-zinc-50 dark:bg-zinc-900 min-h-screen rounded-xl shadow-sm">
+    <div className="max-w-3xl mx-auto px-6 py-12 bg-zinc-50 dark:bg-zinc-900 min-h-screen mt-10 mb-10 rounded-xl shadow-sm">
       <h1 className="text-4xl font-extrabold text-zinc-800 dark:text-white mb-6">
         About FolioBuilder
       </h1>
