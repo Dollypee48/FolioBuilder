@@ -21,27 +21,27 @@ export default function PortfolioPreview() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-gray-800">Portfolio Preview</h1>
+        <h1 className="text-2xl font-bold text-white">Portfolio Preview</h1>
         <DownloadButton onClick={handleDownload} label="Download PDF" />
       </div>
 
-      {/* 👇 Inline styles ensure compatibility with html2canvas */}
+      
       <div
         ref={previewRef}
         className="p-6 rounded-xl shadow space-y-6"
         style={{
           backgroundColor: "#ffffff",
-          color: "#1f2937", // Tailwind's gray-800
+          color: "#1f2937", 
           fontFamily: "sans-serif",
         }}
       >
-        {/* Name and Bio */}
+        
         <div>
           <h2 style={{ fontSize: "1.5rem", fontWeight: "700" }}>{portfolioData.fullName}</h2>
           <p style={{ fontSize: "0.875rem", marginTop: "0.25rem" }}>{portfolioData.bio}</p>
         </div>
 
-        {/* Skills */}
+       
         {portfolioData.skills?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Skills</h3>
@@ -53,7 +53,7 @@ export default function PortfolioPreview() {
           </div>
         )}
 
-        {/* Projects */}
+       
         {portfolioData.projects?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Projects</h3>
@@ -78,7 +78,7 @@ export default function PortfolioPreview() {
           </div>
         )}
 
-        {/* Social Links */}
+       
         {(portfolioData.socialLinks?.github ||
           portfolioData.socialLinks?.linkedin ||
           portfolioData.socialLinks?.website) && (

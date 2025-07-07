@@ -23,7 +23,7 @@ export default function ResumePreview() {
     <div className="max-w-4xl mx-auto px-4 py-8">
     
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-gray-800">Resume Preview</h1>
+        <h1 className="text-2xl font-bold text-white">Resume Preview</h1>
         <DownloadButton onClick={handleDownload} label="Download PDF" />
       </div>
 

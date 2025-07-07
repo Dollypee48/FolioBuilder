@@ -28,27 +28,26 @@ export default function CvPreview() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-gray-800">CV Preview</h1>
+        <h1 className="text-2xl font-bold text-white">CV Preview</h1>
         <DownloadButton onClick={handleDownload} label="Download PDF" />
       </div>
 
-      {/* 👇 Style updated to use inline colors for compatibility */}
+     
       <div
         ref={cvRef}
         className="p-6 rounded-xl shadow space-y-6"
         style={{
-          backgroundColor: "#ffffff", // plain white
-          color: "#1f2937",           // Tailwind gray-800
-          fontFamily: "sans-serif",
+          backgroundColor: "#ffffff", 
+          color: "#1f2937",           
         }}
       >
-        {/* Personal Info */}
+       
         <div>
           <h2 style={{ fontSize: "1.25rem", fontWeight: "600" }}>{cvData.fullName}</h2>
           <p>{cvData.email} | {cvData.phone}</p>
         </div>
 
-        {/* Profile */}
+        
         {cvData.profile && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Profile</h3>
@@ -56,7 +55,7 @@ export default function CvPreview() {
           </div>
         )}
 
-        {/* Work History */}
+        
         {cvData.workHistory?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Work History</h3>
@@ -70,7 +69,7 @@ export default function CvPreview() {
           </div>
         )}
 
-        {/* Education */}
+      
         {cvData.education?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Education</h3>
@@ -83,7 +82,7 @@ export default function CvPreview() {
           </div>
         )}
 
-        {/* Publications */}
+       
         {cvData.publications?.length > 0 && (
           <div>
             <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#047857" }}>Publications</h3>
